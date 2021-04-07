@@ -1,6 +1,6 @@
 # @aminya/eslint-plugin-only-warn
 
-[![Build Status](https://travis-ci.org/bfanger/@aminya/eslint-plugin-only-warn.svg?branch=master)](https://travis-ci.org/bfanger/@aminya/eslint-plugin-only-warn)
+[![Build Status](https://travis-ci.org/aminya/eslint-plugin-only-warn.svg?branch=master)](https://travis-ci.org/aminya/eslint-plugin-only-warn)
 
 Downgrade errors to warnings **with flexibility**. This fork offers a regex pattern to exclude some of the plugins or rules
 
