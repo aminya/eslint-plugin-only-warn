@@ -1,5 +1,9 @@
 const getEslintModules = require('./get-eslint-modules')
-const { getOnlyWarnConfig, isRuleIdExcluded } = require('./settings')
+const {
+  getOnlyWarnConfig,
+  isRuleIdExcluded,
+  mayFatalAsWarning
+} = require('./settings')
 
 const unpatchedVerify = Symbol('verify')
 
@@ -21,6 +25,7 @@ function patch(LinterPrototype) {
       if (message.severity === 2) {
         message.severity = 1
       }
+      mayFatalAsWarning(message, onlyWarnConfig)
     })
     return messages
   }
