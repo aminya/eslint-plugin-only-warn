@@ -9,7 +9,7 @@ function errorAsWarning(message) {
 exports.errorAsWarning = errorAsWarning
 
 /**
- * Downgrade fatal to warning if 'fatal-as-warning' is enabled in the settings
+ * Downgrade fatal errors to warning if 'fatal-as-warning' is enabled in the settings
  */
 function mayFatalAsWarning(message, onlyWarnConfig) {
   if (
