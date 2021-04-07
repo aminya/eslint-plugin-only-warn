@@ -43,7 +43,7 @@ You can provide a regex string to exclude some of the rule IDs (a full rule name
     ],
     "settings": {
         "only-warn": {
-            "exclude-pattern": "no-unused-vars|@typescript-eslint"
+            "exclude-id": "no-unused-vars|@typescript-eslint"
         }
     }
 }

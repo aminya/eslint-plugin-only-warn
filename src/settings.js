@@ -17,8 +17,8 @@ function getOnlyWarnConfig(configs) {
  * Check if ruleId is excluded
  */
 function isRuleIdExcluded(message, onlyWarnConfig) {
-  if (message.ruleId && typeof onlyWarnConfig['exclude-pattern'] === 'string') {
-    const excludeRuleIdRegex = new RegExp(onlyWarnConfig['exclude-pattern'])
+  if (message.ruleId && typeof onlyWarnConfig['exclude-id'] === 'string') {
+    const excludeRuleIdRegex = new RegExp(onlyWarnConfig['exclude-id'])
     if (excludeRuleIdRegex.test(message.ruleId)) {
       return true
     }
