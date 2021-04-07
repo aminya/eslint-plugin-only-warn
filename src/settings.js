@@ -25,20 +25,4 @@ function isRuleIdExcluded(message, onlyWarnConfig) {
   }
   return false
 }
-
-/**
- * Downgrade fatal to warning if 'fatal-as-warning' is enabled in the settings
- */
-function mayFatalAsWarning(message, onlyWarnConfig) {
-  if (
-    message.fatal &&
-    typeof onlyWarnConfig['fatal-as-warning'] === 'boolean'
-  ) {
-    if (onlyWarnConfig['fatal-as-warning']) {
-      message.fatal = false
-    }
-  }
-  return
-}
-
-module.exports = { getOnlyWarnConfig, isRuleIdExcluded, mayFatalAsWarning }
+module.exports = { getOnlyWarnConfig, isRuleIdExcluded }

@@ -1,9 +1,6 @@
 const getEslintModules = require('./get-eslint-modules')
-const {
-  getOnlyWarnConfig,
-  isRuleIdExcluded,
-  mayFatalAsWarning
-} = require('./settings')
+const { getOnlyWarnConfig, isRuleIdExcluded } = require('./settings')
+const { errorAsWarning, mayFatalAsWarning } = require('./message-transform')
 
 const unpatchedVerify = Symbol('verify')
 
@@ -26,12 +23,6 @@ function patch(LinterPrototype) {
       mayFatalAsWarning(message, onlyWarnConfig)
     })
     return messages
-  }
-}
-
-function errorAsWarning(message) {
-  if (message.severity === 2) {
-    message.severity = 1
   }
 }
 
