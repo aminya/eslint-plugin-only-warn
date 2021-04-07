@@ -22,12 +22,16 @@ function patch(LinterPrototype) {
       if (isRuleIdExcluded(message, onlyWarnConfig)) {
         return
       }
-      if (message.severity === 2) {
-        message.severity = 1
-      }
+      errorAsWarning(message)
       mayFatalAsWarning(message, onlyWarnConfig)
     })
     return messages
+  }
+}
+
+function errorAsWarning(message) {
+  if (message.severity === 2) {
+    message.severity = 1
   }
 }
 
