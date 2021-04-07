@@ -1,24 +1,16 @@
-# eslint-plugin-only-warn
+# @aminya/eslint-plugin-only-warn
 
-[![Build Status](https://travis-ci.org/bfanger/eslint-plugin-only-warn.svg?branch=master)](https://travis-ci.org/bfanger/eslint-plugin-only-warn)
+[![Build Status](https://travis-ci.org/bfanger/@aminya/eslint-plugin-only-warn.svg?branch=master)](https://travis-ci.org/bfanger/@aminya/eslint-plugin-only-warn)
 
-Downgrade errors to warnings
+Downgrade errors to warnings **with flexibility**. This fork offers a regex pattern to exclude some of the plugins or rules
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
-
 ```
-$ npm i eslint --save-dev
+npm install @aminya/eslint-plugin-only-warn --save-dev
 ```
 
-Next, install `eslint-plugin-only-warn`:
-
-```
-$ npm install eslint-plugin-only-warn --save-dev
-```
-
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-only-warn` globally.
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@aminya/eslint-plugin-only-warn` globally.
 
 ## Usage
 
