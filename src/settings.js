@@ -25,5 +25,4 @@ function isRuleIdExcluded(message, onlyWarnConfig) {
   }
   return false
 }
-
 module.exports = { getOnlyWarnConfig, isRuleIdExcluded }
