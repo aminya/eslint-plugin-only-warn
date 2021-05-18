@@ -1,6 +1,6 @@
 {
   "name": "@aminya/eslint-plugin-only-warn",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Downgrade errors to warnings with flexibility",
   "keywords": [
     "eslint",
@@ -13,10 +13,10 @@
     "test:watch": "jest --watch"
   },
   "author": "Bob Fanger, Amin Yahyaabadi",
-  "homepage": "https://github.com/bfanger/aminya/eslint-plugin-only-warn",
+  "homepage": "https://github.com/aminya/eslint-plugin-only-warn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bfanger/aminya/eslint-plugin-only-warn.git"
+    "url": "https://github.com/aminya/eslint-plugin-only-warn.git"
   },
   "prettier": {
     "semi": false,
