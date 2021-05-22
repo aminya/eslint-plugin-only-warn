@@ -9,10 +9,17 @@ Downgrade errors to warnings **with flexibility**. This fork has more features t
 ## Installation
 
 ```
-npm install @aminya/eslint-plugin-only-warn --save-dev
+npm install eslint-plugin-only-warn@npm:@aminya/eslint-plugin-only-warn --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `@aminya/eslint-plugin-only-warn` globally.
+or in package.json:
+```json
+"devDependencies": {
+    "eslint-plugin-only-warn": "npm:@aminya/eslint-plugin-only-warn@^1.2.1",
+}
+```
+
+**Note:** If you installed ESLint globally (using the `-g` flag) then you must also use `-g` for the above command.
 
 ## Usage
 
